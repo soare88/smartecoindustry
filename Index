@@ -1,1 +1,1326 @@
-aaa
+```html
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Smart Eco Industry | Granule de plastic reciclate</title>
+
+  <meta
+    name="description"
+    content="Smart Eco Industry produce granule de plastic din materiale reciclate și oferă soluții pentru industria materialelor plastice și economia circulară."
+  >
+
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b1711">
+
+  <link rel="canonical" href="https://smartecoindustry.ro/">
+
+  <style>
+    :root {
+      --bg: #07110c;
+      --bg-soft: #0d1d14;
+      --card: #11251a;
+      --card-light: #173522;
+      --green: #8bcf45;
+      --green-dark: #5d9e2d;
+      --white: #f5f8f3;
+      --text: #d6dfd8;
+      --muted: #94a59a;
+      --border: rgba(255,255,255,.10);
+      --max: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      background: var(--bg);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(100% - 40px, var(--max));
+      margin: auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7,17,12,.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -.05em;
+      white-space: nowrap;
+    }
+
+    .logo span {
+      color: var(--green);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      transition: .2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--green);
+    }
+
+    .nav-button {
+      background: var(--green);
+      color: #0a160d;
+      padding: 12px 19px;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: 800;
+      transition: .2s ease;
+    }
+
+    .nav-button:hover {
+      background: #a3e365;
+      transform: translateY(-1px);
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 760px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 80% 20%,
+          rgba(139,207,69,.20),
+          transparent 32%
+        ),
+        linear-gradient(
+          135deg,
+          #07110c 0%,
+          #0d2116 55%,
+          #10291a 100%
+        );
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      right: -220px;
+      bottom: -260px;
+      border-radius: 50%;
+      border: 1px solid rgba(139,207,69,.12);
+      box-shadow:
+        0 0 0 70px rgba(139,207,69,.03),
+        0 0 0 140px rgba(139,207,69,.02);
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(46px, 6vw, 78px);
+      line-height: .98;
+      letter-spacing: -.06em;
+      max-width: 720px;
+    }
+
+    .hero h1 span {
+      color: var(--green);
+    }
+
+    .hero-text {
+      color: var(--text);
+      font-size: 19px;
+      max-width: 650px;
+      margin-top: 25px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--green);
+      color: #08120b;
+      padding: 14px 22px;
+      border-radius: 7px;
+      font-weight: 800;
+      transition: .2s ease;
+    }
+
+    .btn-primary:hover {
+      background: #a3e365;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      color: var(--white);
+      padding: 14px 22px;
+      border-radius: 7px;
+      transition: .2s ease;
+    }
+
+    .btn-secondary:hover {
+      border-color: rgba(139,207,69,.5);
+      color: var(--green);
+    }
+
+    /* HERO VISUAL */
+
+    .factory-visual {
+      height: 500px;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background:
+        linear-gradient(
+          145deg,
+          rgba(27,64,40,.9),
+          rgba(8,22,14,.95)
+        );
+      box-shadow: 0 35px 90px rgba(0,0,0,.35);
+    }
+
+    .factory-lines {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          90deg,
+          transparent 49%,
+          rgba(255,255,255,.04) 50%,
+          transparent 51%
+        ),
+        linear-gradient(
+          transparent 49%,
+          rgba(255,255,255,.04) 50%,
+          transparent 51%
+        );
+      background-size: 80px 80px;
+      opacity: .4;
+    }
+
+    .recycle-symbol {
+      position: absolute;
+      right: 30px;
+      top: 45px;
+      font-size: 190px;
+      line-height: 1;
+      color: rgba(139,207,69,.09);
+    }
+
+    .factory-building {
+      position: absolute;
+      left: 45px;
+      right: 45px;
+      bottom: 105px;
+      height: 170px;
+      background: linear-gradient(
+        180deg,
+        #294b34,
+        #152b1d
+      );
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .roof {
+      position: absolute;
+      left: -20px;
+      right: -20px;
+      top: -32px;
+      height: 34px;
+      background: #203b29;
+      transform: skewX(-35deg);
+    }
+
+    .window-row {
+      display: flex;
+      gap: 12px;
+      padding: 30px 25px;
+    }
+
+    .window {
+      width: 44px;
+      height: 55px;
+      background: rgba(139,207,69,.18);
+      border: 1px solid rgba(139,207,69,.25);
+    }
+
+    .factory-door {
+      position: absolute;
+      bottom: 0;
+      right: 35px;
+      width: 65px;
+      height: 100px;
+      background: #09150d;
+      border: 1px solid rgba(255,255,255,.1);
+    }
+
+    .factory-info {
+      position: absolute;
+      left: 25px;
+      right: 25px;
+      bottom: 25px;
+      padding: 17px 20px;
+      border-radius: 10px;
+      background: rgba(5,13,9,.88);
+      border: 1px solid var(--border);
+    }
+
+    .factory-info strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .factory-info span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    section {
+      padding: 105px 0;
+    }
+
+    .section-header {
+      max-width: 720px;
+      margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(34px, 4vw, 48px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      margin-top: 18px;
+      font-size: 16px;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 18px;
+    }
+
+    .info-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 32px;
+      border-radius: 14px;
+      transition: .25s ease;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(139,207,69,.28);
+    }
+
+    .card-number {
+      color: var(--green);
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: .1em;
+    }
+
+    .info-card h3 {
+      margin: 15px 0 10px;
+      font-size: 22px;
+    }
+
+    .info-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    /* =========================
+       PRODUCTS
+    ========================= */
+
+    .products {
+      background: var(--bg-soft);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 18px;
+    }
+
+    .product-card {
+      min-height: 270px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-card::after {
+      content: "♻";
+      position: absolute;
+      right: -20px;
+      bottom: -45px;
+      font-size: 150px;
+      color: rgba(139,207,69,.05);
+    }
+
+    .product-card h3 {
+      font-size: 25px;
+      margin: 15px 0 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .product-card p {
+      color: var(--muted);
+      font-size: 15px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .product-tag {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 6px 11px;
+      border-radius: 30px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* =========================
+       PROCESS
+    ========================= */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      gap: 10px;
+    }
+
+    .process-step {
+      background: var(--card);
+      border-top: 2px solid var(--green);
+      padding: 25px 20px;
+    }
+
+    .process-step .number {
+      color: var(--green);
+      font-weight: 900;
+      font-size: 13px;
+    }
+
+    .process-step h3 {
+      margin: 12px 0 8px;
+      font-size: 17px;
+    }
+
+    .process-step p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       SUSTAINABILITY
+    ========================= */
+
+    .sustainability {
+      background:
+        radial-gradient(
+          circle at 20% 50%,
+          rgba(139,207,69,.10),
+          transparent 35%
+        ),
+        var(--bg-soft);
+    }
+
+    .sustainability-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .sustainability-box {
+      min-height: 380px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background:
+        linear-gradient(
+          145deg,
+          #173722,
+          #0b1a11
+        );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .big-recycle {
+      font-size: 220px;
+      color: rgba(139,207,69,.12);
+    }
+
+    .sustainability-content h2 {
+      font-size: 44px;
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+
+    .sustainability-content p {
+      color: var(--muted);
+      margin-top: 20px;
+    }
+
+    .check-list {
+      margin-top: 28px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .check {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .check-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(139,207,69,.14);
+      color: var(--green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 24px;
+      font-size: 13px;
+    }
+
+    .check span {
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta-section {
+      padding: 90px 0;
+    }
+
+    .cta-box {
+      background:
+        linear-gradient(
+          135deg,
+          #173923,
+          #0e2116
+        );
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .cta-box h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.05;
+      letter-spacing: -.04em;
+    }
+
+    .cta-box p {
+      color: var(--muted);
+      margin-top: 13px;
+      max-width: 650px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 30px 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 950px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 80px 0;
+        min-height: auto;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid,
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .sustainability-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-box {
+        display: block;
+      }
+
+      .cta-box .btn-primary {
+        margin-top: 25px;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .container {
+        width: min(100% - 28px, var(--max));
+      }
+
+      .navbar {
+        min-height: 68px;
+      }
+
+      .logo {
+        font-size: 18px;
+      }
+
+      .nav-button {
+        padding: 10px 13px;
+        font-size: 12px;
+      }
+
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      .hero-text {
+        font-size: 17px;
+      }
+
+      .factory-visual {
+        height: 350px;
+      }
+
+      .factory-building {
+        left: 25px;
+        right: 25px;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-box {
+        padding: 32px 25px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+  <header>
+    <div class="container navbar">
+
+      <a href="#" class="logo">
+        SMART <span>ECO</span> INDUSTRY
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#despre">Despre noi</a></li>
+        <li><a href="#produse">Produse</a></li>
+        <li><a href="#proces">Proces</a></li>
+        <li><a href="#sustenabilitate">Sustenabilitate</a></li>
+      </ul>
+
+      <a href="#contact" class="nav-button">
+        Cere ofertă
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="hero">
+
+      <div class="container hero-grid">
+
+        <div>
+
+          <div class="eyebrow">
+            Reciclare · Producție · Economie circulară
+          </div>
+
+          <h1>
+            Plastic reciclat.
+            <span>Transformat în resurse.</span>
+          </h1>
+
+          <p class="hero-text">
+            Smart Eco Industry valorifică materialele plastice reciclate
+            și le transformă în granule destinate industriei.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="#produse" class="btn-primary">
+              Descoperă produsele
+            </a>
+
+            <a href="#proces" class="btn-secondary">
+              Vezi procesul
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="factory-visual">
+
+          <div class="factory-lines"></div>
+
+          <div class="recycle-symbol">
+            ♻
+          </div>
+
+          <div class="factory-building">
+
+            <div class="roof"></div>
+
+            <div class="window-row">
+              <div class="window"></div>
+              <div class="window"></div>
+              <div class="window"></div>
+              <div class="window"></div>
+              <div class="window"></div>
+            </div>
+
+            <div class="factory-door"></div>
+
+          </div>
+
+          <div class="factory-info">
+            <strong>
+              Materie primă pentru economia circulară
+            </strong>
+
+            <span>
+              Materialele reciclate reintră în circuitul industrial.
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         DESPRE
+    ========================= -->
+
+    <section id="despre">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="eyebrow">
+            Smart Eco Industry
+          </div>
+
+          <h2>
+            Reciclare cu perspectivă industrială.
+          </h2>
+
+          <p>
+            Transformăm materialele plastice reciclabile într-o resursă
+            care poate fi reintrodusă în procesele industriale.
+          </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+          <article class="info-card">
+
+            <div class="card-number">
+              01
+            </div>
+
+            <h3>
+              Valorificarea materialelor
+            </h3>
+
+            <p>
+              Materialele plastice reciclabile sunt pregătite și procesate
+              pentru a putea fi transformate în materie primă reutilizabilă.
+            </p>
+
+          </article>
+
+
+          <article class="info-card">
+
+            <div class="card-number">
+              02
+            </div>
+
+            <h3>
+              Producție industrială
+            </h3>
+
+            <p>
+              Procesul de reciclare urmărește obținerea unui material
+              potrivit pentru utilizarea în aplicații industriale.
+            </p>
+
+          </article>
+
+
+          <article class="info-card">
+
+            <div class="card-number">
+              03
+            </div>
+
+            <h3>
+              Parteneriate B2B
+            </h3>
+
+            <p>
+              Colaborăm cu furnizori de materiale reciclabile și cu
+              companii care utilizează granule reciclate.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRODUSE
+    ========================= -->
+
+    <section id="produse" class="products">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="eyebrow">
+            Produse
+          </div>
+
+          <h2>
+            Granule de plastic reciclate
+          </h2>
+
+          <p>
+            Portofoliul exact de materiale și specificațiile tehnice
+            pot fi prezentate în funcție de producția și oferta Smart Eco Industry.
+          </p>
+
+        </div>
+
+
+        <div class="product-grid">
+
+          <article class="product-card">
+
+            <div class="card-number">
+              01
+            </div>
+
+            <h3>
+              Granule PP reciclat
+            </h3>
+
+            <p>
+              Material reciclat pe bază de polipropilenă pentru aplicații
+              industriale compatibile cu cerințele materialului.
+            </p>
+
+            <span class="product-tag">
+              Specificații la cerere
+            </span>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <div class="card-number">
+              02
+            </div>
+
+            <h3>
+              Granule PE reciclat
+            </h3>
+
+            <p>
+              Materie primă reciclată pe bază de polietilenă pentru
+              aplicații compatibile cu acest tip de material.
+            </p>
+
+            <span class="product-tag">
+              Specificații la cerere
+            </span>
+
+          </article>
+
+
+          <article class="product-card">
+
+            <div class="card-number">
+              03
+            </div>
+
+            <h3>
+              Material reciclat personalizat
+            </h3>
+
+            <p>
+              Soluții adaptate necesarului clientului în funcție de
+              material, aplicație și cerințele tehnice.
+            </p>
+
+            <span class="product-tag">
+              În funcție de proiect
+            </span>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROCES
+    ========================= -->
+
+    <section id="proces">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="eyebrow">
+            Proces tehnologic
+          </div>
+
+          <h2>
+            De la material reciclat la granule.
+          </h2>
+
+          <p>
+            Procesul industrial transformă materialele plastice recuperate
+            într-o formă de materie primă reutilizabilă.
+          </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+          <div class="process-step">
+
+            <div class="number">
+              01
+            </div>
+
+            <h3>
+              Recepție
+            </h3>
+
+            <p>
+              Materialele reciclabile sunt recepționate și pregătite
+              pentru procesare.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <div class="number">
+              02
+            </div>
+
+            <h3>
+              Sortare
+            </h3>
+
+            <p>
+              Materialele sunt separate în funcție de tip și caracteristici.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <div class="number">
+              03
+            </div>
+
+            <h3>
+              Mărunțire
+            </h3>
+
+            <p>
+              Materialul este pregătit pentru etapele ulterioare
+              ale procesului.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <div class="number">
+              04
+            </div>
+
+            <h3>
+              Procesare
+            </h3>
+
+            <p>
+              Materialul este procesat și transformat într-o materie
+              primă potrivită pentru granulare.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <div class="number">
+              05
+            </div>
+
+            <h3>
+              Granulare
+            </h3>
+
+            <p>
+              Materialul rezultat este transformat în granule pentru
+              utilizare industrială.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SUSTENABILITATE
+    ========================= -->
+
+    <section id="sustenabilitate" class="sustainability">
+
+      <div class="container sustainability-grid">
+
+        <div class="sustainability-box">
+
+          <div class="big-recycle">
+            ♻
+          </div>
+
+        </div>
+
+
+        <div class="sustainability-content">
+
+          <div class="eyebrow">
+            Economie circulară
+          </div>
+
+          <h2>
+            Deșeul de astăzi poate deveni materia primă de mâine.
+          </h2>
+
+          <p>
+            Reciclarea materialelor plastice contribuie la valorificarea
+            resurselor și la reducerea cantității de materiale care ajung
+            să fie eliminate fără reutilizare.
+          </p>
+
+
+          <div class="check-list">
+
+            <div class="check">
+
+              <div class="check-icon">
+                ✓
+              </div>
+
+              <span>
+                Valorificarea materialelor plastice reciclabile
+              </span>
+
+            </div>
+
+
+            <div class="check">
+
+              <div class="check-icon">
+                ✓
+              </div>
+
+              <span>
+                Transformarea materialelor în materie primă reutilizabilă
+              </span>
+
+            </div>
+
+
+            <div class="check">
+
+              <div class="check-icon">
+                ✓
+              </div>
+
+              <span>
+                Susținerea modelelor industriale bazate pe economie circulară
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
+    <section id="contact" class="cta-section">
+
+      <div class="container">
+
+        <div class="cta-box">
+
+          <div>
+
+            <div class="eyebrow">
+              Colaborare B2B
+            </div>
+
+            <h2>
+              Ai nevoie de materie primă reciclată?
+            </h2>
+
+            <p>
+              Contactează Smart Eco Industry pentru informații despre
+              produse, disponibilitate și posibilități de colaborare.
+            </p>
+
+          </div>
+
+
+          <a
+            href="mailto:contact@smartecoindustry.ro"
+            class="btn-primary"
+          >
+            Cere informații
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <span>
+        © 2026 Smart Eco Industry
+      </span>
+
+      <span>
+        România · Reciclare · Economie circulară
+      </span>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
+```
